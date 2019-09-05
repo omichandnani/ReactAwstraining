@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import UserInput from "./Feedback";
+import FileUpload from "./FileUpload";
+
 import { Link } from "react-router-dom";
 import { Button, Nav, Navbar } from "react-bootstrap";
 
@@ -45,6 +47,7 @@ class App extends Component {
             </div>
 
             <Route exact path="/UserInput" component={UserInput} />
+            <Route exact path="/Search" component={FileUpload} />
           </div>
         </Switch>
       </Router>
